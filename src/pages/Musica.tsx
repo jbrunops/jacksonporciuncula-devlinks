@@ -14,7 +14,7 @@ const Musica = () => {
       <div className="space-y-8">
         {/* Spotify Embeds */}
         <div className="spotify-section">
-          <div className="flex items-center mb-4">
+          <div className="flex items-center mb-4 justify-center sm:justify-start">
             <Disc className="w-4 h-4 text-tech-blue mr-2" />
             <h3 className="text-base font-medium text-gray-300">Spotify</h3>
           </div>
@@ -54,7 +54,7 @@ const Musica = () => {
         
         {/* SoundCloud Embed */}
         <div className="soundcloud-section">
-          <div className="flex items-center mb-4">
+          <div className="flex items-center mb-4 justify-center sm:justify-start">
             <Radio className="w-4 h-4 text-tech-purple mr-2" />
             <h3 className="text-base font-medium text-gray-300">SoundCloud</h3>
           </div>
