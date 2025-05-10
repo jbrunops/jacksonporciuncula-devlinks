@@ -109,6 +109,8 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ size = 'md', className = '' }
       <SocialIcon platform="twitter" username="jbrunops" size={size} />
       <SocialIcon platform="facebook" username="jacksonporciuncula" size={size} />
       <SocialIcon platform="instagram" username="jbrunops" size={size} />
+      <SocialIcon platform="linkedin" username="jbrunops" size={size} />
+      <SocialIcon platform="email" username="jbrunops@outlook.com" size={size} />
     </div>
   );
 };
