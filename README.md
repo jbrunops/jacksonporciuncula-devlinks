@@ -39,22 +39,6 @@ Este projeto foi desenvolvido com:
 - **React Query**: Biblioteca para gerenciamento de estado do servidor
 - **React Router DOM**: Roteamento para aplicações React
 
-## 🖥️ Como executar localmente
-
-```bash
-# Clone o repositório
-git clone <URL_DO_REPOSITÓRIO>
-
-# Entre no diretório do projeto
-cd jacksonporciuncula-portfolio
-
-# Instale as dependências
-npm install
-
-# Inicie o servidor de desenvolvimento
-npm run dev
-```
-
 ## 📱 Layout Responsivo
 
 O site foi projetado para fornecer uma experiência fluida em dispositivos móveis, tablets e desktops, utilizando design responsivo com Tailwind CSS.
