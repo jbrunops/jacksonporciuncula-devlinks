@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
@@ -15,7 +14,7 @@ const Header = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-tech-blue/20 to-tech-purple/20 rounded-full blur-xl"></div>
         <div className="w-28 h-28 rounded-full bg-gradient-to-br from-tech-blue to-tech-purple p-1 mx-auto mb-4 overflow-hidden glow">
           <Avatar className="w-full h-full">
-            <AvatarImage src="https://avatars.githubusercontent.com/u/4586943" alt="Jackson Porciúncula" />
+            <AvatarImage src="https://github.com/jbrunops.png" alt="Jackson Porciúncula" />
             <AvatarFallback className="w-full h-full rounded-full bg-tech-dark flex items-center justify-center text-white text-4xl font-bold">
               J
             </AvatarFallback>
