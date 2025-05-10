@@ -1,73 +1,75 @@
-# Welcome to your Lovable project
+# Portfólio de Jackson Porciúncula
 
-## Project info
+![Tecnologias](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tecnologias](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tecnologias](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Tecnologias](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
-**URL**: https://lovable.dev/projects/7b6d70b9-ff0c-4cc3-96b7-86f1ade1b8de
+## 📋 Sobre
 
-## How can I edit this code?
+Este é o repositório do meu site de portfólio pessoal que apresenta minhas habilidades e projetos como desenvolvedor front-end, escritor e músico. O site foi desenvolvido com tecnologias modernas para criar uma experiência interativa e visualmente atraente.
 
-There are several ways of editing your application.
+## 🚀 Áreas de Atuação
 
-**Use Lovable**
+### 💻 Desenvolvimento Front-end
+Projetos destacados:
+- **Casa dos Escritores**: Plataforma para escritores compartilharem e desenvolverem seus trabalhos
+- **Quero Ser Católico**: Site educacional sobre catolicismo e formação religiosa
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7b6d70b9-ff0c-4cc3-96b7-86f1ade1b8de) and start prompting.
+### 📝 UX/UI e Escrita
+Estudos de caso e artigos:
+- **Estudo de Caso: App Doação de Ferro**: Desenvolvimento de UX para aplicativo de doação
+- **Itaú Você**: Projeto para reaproximar antigos clientes ao banco Itaú
+- **A Guerra dos Cem Mil**: Análise narrativa do universo ficcional
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🎵 Música
+Minhas produções musicais disponíveis em:
+- **Spotify**: Álbuns e singles autorais
+- **SoundCloud**: Playlists e faixas exclusivas
 
-**Use your preferred IDE**
+## 🛠️ Tecnologias
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Este projeto foi desenvolvido com:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **React**: Biblioteca JavaScript para construção de interfaces
+- **TypeScript**: Superset JavaScript com tipagem estática
+- **Vite**: Build tool ultrarrápida para desenvolvimento moderno
+- **Tailwind CSS**: Framework CSS utilitário para design responsivo
+- **shadcn/ui**: Componentes de UI reutilizáveis e acessíveis
+- **React Query**: Biblioteca para gerenciamento de estado do servidor
+- **React Router DOM**: Roteamento para aplicações React
 
-Follow these steps:
+## 🖥️ Como executar localmente
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# Clone o repositório
+git clone <URL_DO_REPOSITÓRIO>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Entre no diretório do projeto
+cd jacksonporciuncula-portfolio
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Instale as dependências
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Inicie o servidor de desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 📱 Layout Responsivo
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+O site foi projetado para fornecer uma experiência fluida em dispositivos móveis, tablets e desktops, utilizando design responsivo com Tailwind CSS.
 
-**Use GitHub Codespaces**
+## 📨 Contato
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- GitHub: [jbrunops](https://github.com/jbrunops/)
+- Twitter: [jbrunops](https://x.com/jbrunops)
+- Facebook: [jacksonporciuncula](https://facebook.com/jacksonporciuncula)
+- Instagram: [jbrunops](https://instagram.com/jbrunops)
 
-## What technologies are used for this project?
+## 📄 Licença
 
-This project is built with:
+Este projeto está sob a licença MIT.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/7b6d70b9-ff0c-4cc3-96b7-86f1ade1b8de) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Desenvolvido com ❤️ por Jackson Porciúncula
