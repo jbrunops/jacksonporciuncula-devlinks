@@ -1,15 +1,21 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import DevSection from '@/components/DevSection';
 import SpotifySection from '@/components/SpotifySection';
 import WritingSection from '@/components/WritingSection';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO/SEO';
 import { Sparkles, Mountain, Stars, GalleryVertical } from 'lucide-react';
 
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col bg-tech-dark text-tech-light relative overflow-hidden">
+      <SEO 
+        title="Jackson Porciúncula - Desenvolvedor • UX/UI Designer • Músico" 
+        description="Portfolio de Jackson Porciúncula: Desenvolvedor Front-end, UX/UI Designer e músico. Conheça meus projetos, designs e músicas."
+        url="/"
+      />
+      
       {/* Background decoration elements */}
       <div className="absolute top-40 right-10 text-tech-blue/20 hidden lg:block animate-pulse">
         <Sparkles size={120} />

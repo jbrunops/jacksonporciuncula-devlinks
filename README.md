@@ -13,6 +13,7 @@ Um site portfolio moderno e responsivo com design estilo futurista/tech, constru
 - [Hooks Personalizados](#-hooks-personalizados)
 - [Integrações de API](#-integrações-de-api)
 - [UI/UX & Design](#-uiux--design)
+- [SEO & Otimizações](#-seo--otimizações)
 - [Responsive Design](#-responsive-design)
 - [Performance](#-performance)
 - [Como Executar](#-como-executar)
@@ -45,6 +46,11 @@ O projeto utiliza diversas tecnologias modernas de desenvolvimento front-end:
 - **PostCSS** - Ferramenta para transformar CSS com plugins JavaScript
 - **Bun** - Toolkit e runtime JavaScript para desenvolvimento rápido
 
+### SEO & PWA
+- **React Helmet** - Gerenciamento de metadados e tags para SEO
+- **Service Worker** - Suporte a PWA para experiência offline e melhor desempenho
+- **Schema.org JSON-LD** - Estruturação de dados para melhor compreensão por motores de busca
+
 ## ✨ Características
 
 ### Geral
@@ -72,6 +78,7 @@ O projeto segue uma arquitetura organizada e escalável:
 src/
 ├── components/         # Componentes reutilizáveis
 │   ├── ui/             # Componentes básicos de UI
+│   ├── SEO/            # Componentes para otimização SEO 
 │   └── ...             # Componentes de maior complexidade
 ├── hooks/              # Hooks personalizados
 ├── lib/                # Utilitários e funções auxiliares
@@ -94,6 +101,10 @@ O projeto foi desenvolvido com um forte foco na reutilização de componentes:
 - **CaseStudyCard** - Cards para exibir estudos de caso com imagens e descrições
 - **SocialIcons** - Conjunto de ícones sociais com links externos
 - **SerieCard** - Card específico para mostrar séries literárias (implementado mas removido temporariamente)
+
+### SEO Components
+- **SEO** - Componente principal para gerenciamento de metadados e tags
+- **SchemaOrg** - Componente para adicionar dados estruturados JSON-LD
 
 ### UI Primitives (via Shadcn/UI)
 - **Button** - Botões estilizados com variantes
@@ -120,6 +131,7 @@ Hooks React personalizados para lógica reutilizável:
 ### Spotify & SoundCloud
 - Integração com players embedados do Spotify
 - Integração com player embedado do SoundCloud
+- Carregamento condicional para melhorar privacidade e desempenho
 
 ## 🎨 UI/UX & Design
 
@@ -135,6 +147,33 @@ Hooks React personalizados para lógica reutilizável:
 - **Hover Effects** - Feedback visual ao passar o mouse sobre elementos
 - **Background Elements** - Elementos decorativos animados no fundo
 - **Loading States** - Animações durante estados de carregamento
+
+## 🔍 SEO & Otimizações
+
+O projeto implementa diversas práticas para melhorar a visibilidade nos motores de busca:
+
+### Metadados Otimizados
+- **Title e Description** - Tags meta otimizadas para cada página
+- **OpenGraph/Facebook** - Metadados para compartilhamento no Facebook
+- **Twitter Cards** - Metadados para compartilhamento no Twitter
+- **Canonical URLs** - Links canônicos para evitar conteúdo duplicado
+
+### Dados Estruturados
+- **Schema.org JSON-LD** - Marcação de dados estruturados para melhor compreensão pelos motores de busca
+- **Perfil Pessoa** - Informações estruturadas sobre o desenvolvedor
+- **WebSite** - Informações estruturadas sobre o site
+- **ProfilePage** - Informações estruturadas sobre o portfolio
+
+### PWA (Progressive Web App)
+- **Manifest.json** - Configuração para instalação como aplicativo
+- **Service Worker** - Suporte para funcionamento offline
+- **Ícones e Theme Colors** - Identidade visual para instalação como app
+
+### Otimizações
+- **Sitemap XML** - Mapa do site para indexação por rastreadores
+- **Robots.txt** - Configuração para controle de rastreamento
+- **Imagem OpenGraph** - Imagem personalizada para compartilhamento social
+- **Carregamento condicional** - Players de música carregados apenas quando solicitados
 
 ## 📱 Responsive Design
 
@@ -159,6 +198,7 @@ O projeto é otimizado para carregar rapidamente e funcionar suavemente:
 - **Efficient Bundling** - Bundle otimizado com Vite
 - **Caching** - Estratégias de cache para dados externos
 - **Optimized Animations** - Animações otimizadas usando Framer Motion
+- **Service Worker** - Cache de recursos para carregamento rápido e funcionalidade offline
 
 ## 🚀 Como Executar
 
@@ -201,11 +241,20 @@ const devProjects = [
 
 Para atualizar informações de perfil, edite o componente Header em `src/components/Header.tsx`.
 
+### Atualizar Metadados SEO
+
+Para atualizar metadados de SEO, edite o componente SEO em `src/components/SEO/SEO.tsx`.
+
+### Atualizar Dados Estruturados
+
+Para atualizar os dados estruturados Schema.org, edite o componente SchemaOrg em `src/components/SEO/SchemaOrg.tsx`.
+
 ### Adicionar Nova Seção
 
 1. Crie um novo componente em `src/pages/`
 2. Adicione a rota em `src/App.tsx`
 3. Adicione o link de navegação em `src/components/Header.tsx`
+4. Atualize o sitemap.xml com a nova URL
 
 ---
 

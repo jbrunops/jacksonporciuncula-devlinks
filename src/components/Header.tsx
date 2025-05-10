@@ -28,7 +28,7 @@ const Header = () => {
           Jackson Porciúncula
         </h1>
         <p className="text-gray-400 mt-2 max-w-md mx-auto">
-          Desenvolvedor Front-end • Escritor • Músico
+          Desenvolvedor Front-end • UX/UI Designer • Músico
         </p>
       </div>
       <nav className="flex flex-wrap gap-3 mb-6 justify-center">

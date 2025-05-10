@@ -1,0 +1,24 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="256" fill="#0e1218"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="128" cy="128" r="4" fill="#172236"/>
+  <circle cx="384" cy="384" r="4" fill="#1e2c4a"/>
+  <circle cx="384" cy="128" r="4" fill="#1e2c4a"/>
+  <circle cx="128" cy="384" r="4" fill="#172236"/>
+  
+  <!-- Avatar circle -->
+  <circle cx="256" cy="256" r="150" fill="url(#avatar-gradient)" stroke="white" stroke-width="8"/>
+  
+  <!-- Initial -->
+  <text x="256" y="300" font-family="Inter, sans-serif" font-size="180" font-weight="bold" text-anchor="middle" fill="white">J</text>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="avatar-gradient" x1="106" y1="106" x2="406" y2="406" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5873f5"/>
+      <stop offset="100%" stop-color="#b363c3"/>
+    </linearGradient>
+  </defs>
+</svg> 

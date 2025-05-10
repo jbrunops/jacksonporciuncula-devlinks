@@ -1,0 +1,26 @@
+{
+  "name": "Jackson Porciúncula - Portfolio",
+  "short_name": "Jackson Portfolio",
+  "description": "Portfolio de Jackson Porciúncula: Desenvolvedor Front-end, UX/UI Designer e músico",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e1218",
+  "theme_color": "#5873f5",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "orientation": "portrait",
+  "categories": ["portfolio", "developer", "design", "ux/ui", "music"]
+} 
