@@ -6,10 +6,8 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Layout from "./components/Layout";
 import Portfolio from "./pages/Portfolio";
-import Projetos from "./pages/Projetos";
 import UxUi from "./pages/UxUi";
 import Musica from "./pages/Musica";
-import Escrita from "./pages/Escrita";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,10 +19,8 @@ const AnimatedRoutes = () => {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout><Portfolio /></Layout>} />
-        <Route path="/projetos" element={<Layout><Projetos /></Layout>} />
         <Route path="/ux-ui" element={<Layout><UxUi /></Layout>} />
         <Route path="/musica" element={<Layout><Musica /></Layout>} />
-        <Route path="/escrita" element={<Layout><Escrita /></Layout>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>

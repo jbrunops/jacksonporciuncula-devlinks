@@ -33,10 +33,8 @@ const Header = () => {
       </div>
       <nav className="flex flex-wrap gap-3 mb-6 justify-center">
         <NavLink to="/" active={path === "/"}>Portfolio</NavLink>
-        <NavLink to="/projetos" active={path === "/projetos"}>Projetos</NavLink>
         <NavLink to="/ux-ui" active={path === "/ux-ui"}>UX/UI</NavLink>
         <NavLink to="/musica" active={path === "/musica"}>Música</NavLink>
-        <NavLink to="/escrita" active={path === "/escrita"}>Escrita</NavLink>
       </nav>
       
       <SocialIcons className="mt-1" />
