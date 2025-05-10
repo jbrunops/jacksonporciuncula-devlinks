@@ -1,9 +1,16 @@
 import React from 'react';
 import SectionTitle from '@/components/SectionTitle';
 import CaseStudyCard from '@/components/CaseStudyCard';
-import { FileText } from 'lucide-react';
+import { useMediumArticles } from '@/hooks/useMediumArticles';
+import { FileText, Loader2 } from 'lucide-react';
 
 const UxUi = () => {
+  // Usar o hook para buscar os artigos do Medium (atualiza a cada 1 hora = 3600000ms)
+  const { articles, isLoading, error } = useMediumArticles({
+    username: 'jacksonporciuncula',
+    refreshInterval: 3600000
+  });
+
   return (
     <>
       <SectionTitle 
@@ -11,23 +18,43 @@ const UxUi = () => {
         subtitle="Estudos de caso e artigos sobre design e experiência do usuário"
         icon={<FileText className="w-5 h-5" />}
       />
+      
       <div className="space-y-6">
-        <CaseStudyCard 
-          title="Estudo de Caso: App Doação de Ferro"
-          description="Um estudo de caso detalhado sobre o desenvolvimento de um aplicativo para doação de ferro, abordando problemas e soluções na experiência do usuário."
-          date="Jun 20, 2023"
-          readTime="8 min de leitura"
-          imageUrl="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*CAGSa2ysI0G_To-9s_JS0g.jpeg"
-          url="https://medium.com/@jacksonporciuncula/estudo-de-caso-app-doa%C3%A7%C3%A3o-de-ferro-833c86663438"
-        />
-        <CaseStudyCard 
-          title="Itaú Você: Um projeto para reaproximar antigos clientes ao banco Itaú"
-          description="Como desenvolvi um projeto para reconectar clientes antigos ao banco Itaú, focando em experiência personalizada e engajamento."
-          date="Mar 15, 2023"
-          readTime="10 min de leitura"
-          imageUrl="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*lPGXL9LBpf2kBCI2vthSWg.jpeg"
-          url="https://medium.com/@jacksonporciuncula/ita%C3%BA-voc%C3%AA-um-projeto-para-reaproximar-antigos-clientes-ao-banco-ita%C3%BA-c7ca4391722f"
-        />
+        {isLoading && (
+          <div className="flex items-center justify-center py-12">
+            <Loader2 className="w-10 h-10 text-tech-blue animate-spin" />
+            <span className="ml-3 text-gray-400">Carregando artigos...</span>
+          </div>
+        )}
+        
+        {error && (
+          <div className="text-center p-6 bg-red-500/10 rounded-xl">
+            <p className="text-red-400">{error}</p>
+            <p className="text-sm text-gray-400 mt-2">Tente novamente mais tarde.</p>
+          </div>
+        )}
+        
+        {!isLoading && !error && articles.length === 0 && (
+          <div className="text-center p-6 bg-tech-gray/20 rounded-xl">
+            <p className="text-gray-400">Nenhum artigo encontrado no Medium.</p>
+          </div>
+        )}
+        
+        {articles.map((article, index) => (
+          <CaseStudyCard 
+            key={index}
+            title={article.title}
+            description={article.description.replace(/<[^>]*>/g, '').slice(0, 150) + '...'}
+            date={new Date(article.pubDate).toLocaleDateString('pt-BR', {
+              day: '2-digit',
+              month: 'short',
+              year: 'numeric'
+            })}
+            readTime="Artigo no Medium"
+            imageUrl={article.thumbnail}
+            url={article.link}
+          />
+        ))}
       </div>
     </>
   );
