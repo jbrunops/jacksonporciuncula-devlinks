@@ -1,9 +1,14 @@
 import React from 'react';
+import { useLocation, Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
 import { Avatar, AvatarImage, AvatarFallback } from './ui/avatar';
+import { Github as GithubIcon, Twitter as TwitterIcon, Facebook as FacebookIcon, Instagram as InstagramIcon } from 'lucide-react';
 
 const Header = () => {
+  const location = useLocation();
+  const path = location.pathname;
+
   return (
     <header className="w-full py-10 flex flex-col items-center justify-center text-center px-4 relative">
       {/* Decorative elements */}
@@ -28,10 +33,11 @@ const Header = () => {
         </p>
       </div>
       <nav className="flex flex-wrap gap-3 mb-6 justify-center">
-        <NavButton active>Portfolio</NavButton>
-        <NavButton>Projetos</NavButton>
-        <NavButton>Música</NavButton>
-        <NavButton>Escrita</NavButton>
+        <NavLink to="/" active={path === "/"}>Portfolio</NavLink>
+        <NavLink to="/projetos" active={path === "/projetos"}>Projetos</NavLink>
+        <NavLink to="/ux-ui" active={path === "/ux-ui"}>UX/UI</NavLink>
+        <NavLink to="/musica" active={path === "/musica"}>Música</NavLink>
+        <NavLink to="/escrita" active={path === "/escrita"}>Escrita</NavLink>
       </nav>
       <div className="flex gap-3 justify-center">
         <Button 
@@ -71,14 +77,16 @@ const Header = () => {
   );
 };
 
-type NavButtonProps = {
+type NavLinkProps = {
+  to: string;
   active?: boolean;
   children: React.ReactNode;
 };
 
-const NavButton = ({ active, children }: NavButtonProps) => {
+const NavLink = ({ to, active, children }: NavLinkProps) => {
   return (
-    <button
+    <Link
+      to={to}
       className={cn(
         "px-4 py-2 rounded-full text-sm transition-all",
         active 
@@ -87,11 +95,8 @@ const NavButton = ({ active, children }: NavButtonProps) => {
       )}
     >
       {children}
-    </button>
+    </Link>
   );
 };
-
-// Import icons
-import { Github as GithubIcon, Twitter as TwitterIcon, Facebook as FacebookIcon, Instagram as InstagramIcon } from 'lucide-react';
 
 export default Header;
