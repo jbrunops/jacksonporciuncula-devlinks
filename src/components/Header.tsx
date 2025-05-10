@@ -1,9 +1,8 @@
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
-import { Button } from './ui/button';
 import { Avatar, AvatarImage, AvatarFallback } from './ui/avatar';
-import { Github as GithubIcon, Twitter as TwitterIcon, Facebook as FacebookIcon, Instagram as InstagramIcon } from 'lucide-react';
+import SocialIcons from './SocialIcons';
 
 const Header = () => {
   const location = useLocation();
@@ -39,40 +38,8 @@ const Header = () => {
         <NavLink to="/musica" active={path === "/musica"}>Música</NavLink>
         <NavLink to="/escrita" active={path === "/escrita"}>Escrita</NavLink>
       </nav>
-      <div className="flex gap-3 justify-center">
-        <Button 
-          variant="outline" 
-          size="icon" 
-          className="rounded-full bg-tech-gray/30 border-tech-blue/20 hover:bg-tech-gray/50 hover:border-tech-blue/50 transition-all"
-          onClick={() => window.open('https://github.com/jbrunops/', '_blank')}
-        >
-          <GithubIcon className="h-5 w-5" />
-        </Button>
-        <Button 
-          variant="outline" 
-          size="icon" 
-          className="rounded-full bg-tech-gray/30 border-tech-blue/20 hover:bg-tech-gray/50 hover:border-tech-blue/50 transition-all"
-          onClick={() => window.open('https://x.com/jbrunops', '_blank')}
-        >
-          <TwitterIcon className="h-5 w-5" />
-        </Button>
-        <Button 
-          variant="outline" 
-          size="icon" 
-          className="rounded-full bg-tech-gray/30 border-tech-blue/20 hover:bg-tech-gray/50 hover:border-tech-blue/50 transition-all"
-          onClick={() => window.open('https://facebook.com/jacksonporciuncula', '_blank')}
-        >
-          <FacebookIcon className="h-5 w-5" />
-        </Button>
-        <Button 
-          variant="outline" 
-          size="icon" 
-          className="rounded-full bg-tech-gray/30 border-tech-blue/20 hover:bg-tech-gray/50 hover:border-tech-blue/50 transition-all"
-          onClick={() => window.open('https://instagram.com/jbrunops', '_blank')}
-        >
-          <InstagramIcon className="h-5 w-5" />
-        </Button>
-      </div>
+      
+      <SocialIcons className="mt-1" />
     </header>
   );
 };
@@ -88,10 +55,10 @@ const NavLink = ({ to, active, children }: NavLinkProps) => {
     <Link
       to={to}
       className={cn(
-        "px-4 py-2 rounded-full text-sm transition-all",
+        "px-4 py-2 rounded-full text-sm transition-all duration-300 font-medium",
         active 
-          ? "bg-gradient-to-r from-tech-blue to-tech-purple text-white font-medium shadow-md shadow-tech-blue/20"
-          : "bg-tech-gray/50 text-gray-400 hover:bg-tech-gray hover:shadow-sm hover:shadow-tech-purple/10"
+          ? "bg-gradient-to-r from-tech-blue to-tech-purple text-white shadow-md shadow-tech-blue/20 scale-105"
+          : "bg-tech-gray/30 text-gray-300 hover:bg-tech-gray/50 hover:text-white hover:shadow-sm hover:shadow-tech-purple/20 hover:scale-105 border border-transparent hover:border-tech-purple/30"
       )}
     >
       {children}
