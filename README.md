@@ -1,58 +1,211 @@
-# Portfólio de Jackson Porciúncula
+# 🚀 Portfolio de Jackson Porciúncula
 
-![Tecnologias](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Tecnologias](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Tecnologias](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Tecnologias](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+Um site portfolio moderno e responsivo com design estilo futurista/tech, construído com React e Tailwind CSS. O site apresenta uma interface elegante, animações fluidas e uma experiência de usuário aprimorada em todos os dispositivos.
 
-## 📋 Sobre
+![Portfolio Preview](./public/preview.png)
 
-Este é o repositório do meu site de portfólio pessoal que apresenta minhas habilidades e projetos como desenvolvedor front-end, escritor e músico. O site foi desenvolvido com tecnologias modernas para criar uma experiência interativa e visualmente atraente.
+## 📋 Índice
 
-## 🚀 Áreas de Atuação
+- [Tecnologias](#-tecnologias)
+- [Características](#-características)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Componentes Reutilizáveis](#-componentes-reutilizáveis)
+- [Hooks Personalizados](#-hooks-personalizados)
+- [Integrações de API](#-integrações-de-api)
+- [UI/UX & Design](#-uiux--design)
+- [Responsive Design](#-responsive-design)
+- [Performance](#-performance)
+- [Como Executar](#-como-executar)
+- [Manutenção e Atualização](#-manutenção-e-atualização)
 
-### 💻 Desenvolvimento Front-end
-Projetos destacados:
-- **Casa dos Escritores**: Plataforma para escritores compartilharem e desenvolverem seus trabalhos
-- **Quero Ser Católico**: Site educacional sobre catolicismo e formação religiosa
+## 🛠 Tecnologias
 
-### 📝 UX/UI e Escrita
-Estudos de caso e artigos:
-- **Estudo de Caso: App Doação de Ferro**: Desenvolvimento de UX para aplicativo de doação
-- **Itaú Você**: Projeto para reaproximar antigos clientes ao banco Itaú
-- **A Guerra dos Cem Mil**: Análise narrativa do universo ficcional
+O projeto utiliza diversas tecnologias modernas de desenvolvimento front-end:
 
-### 🎵 Música
-Minhas produções musicais disponíveis em:
-- **Spotify**: Álbuns e singles autorais
-- **SoundCloud**: Playlists e faixas exclusivas
+### Core
+- **React** - Biblioteca JavaScript para construção de interfaces de usuário
+- **TypeScript** - Superset de JavaScript com tipagem estática para maior segurança e produtividade
+- **Vite** - Ferramenta de build extremamente rápida para desenvolvimento moderno
+- **React Router** - Gerenciamento de rotas e navegação no lado do cliente
 
-## 🛠️ Tecnologias
+### Styling
+- **Tailwind CSS** - Framework CSS utility-first para desenvolvimento rápido
+- **Shadcn/UI** - Componentes acessíveis e estilizáveis baseados em Radix UI
+- **Framer Motion** - Biblioteca para criar animações fluidas e interativas
+- **Lucide Icons** - Conjunto de ícones SVG consistentes e personalizáveis
 
-Este projeto foi desenvolvido com:
+### State Management
+- **React Query (TanStack)** - Biblioteca para gerenciamento de estado de dados assíncronos
 
-- **React**: Biblioteca JavaScript para construção de interfaces
-- **TypeScript**: Superset JavaScript com tipagem estática
-- **Vite**: Build tool ultrarrápida para desenvolvimento moderno
-- **Tailwind CSS**: Framework CSS utilitário para design responsivo
-- **shadcn/ui**: Componentes de UI reutilizáveis e acessíveis
-- **React Query**: Biblioteca para gerenciamento de estado do servidor
-- **React Router DOM**: Roteamento para aplicações React
+### Data Fetching
+- **Axios** - Cliente HTTP baseado em promessas para requisições de API
 
-## 📱 Layout Responsivo
+### Tooling
+- **ESLint** - Ferramenta de linting para identificar e reportar padrões em código
+- **PostCSS** - Ferramenta para transformar CSS com plugins JavaScript
+- **Bun** - Toolkit e runtime JavaScript para desenvolvimento rápido
 
-O site foi projetado para fornecer uma experiência fluida em dispositivos móveis, tablets e desktops, utilizando design responsivo com Tailwind CSS.
+## ✨ Características
 
-## 📨 Contato
+### Geral
+- **Design Moderno e Elegante** - Interface com estética tech/futurista em tons de azul e roxo
+- **Navegação Fluida** - Transições de página suaves com animações de entrada e saída
+- **Totalmente Responsivo** - Experiência consistente em desktops, tablets e dispositivos móveis
+- **Tema Dark** - Design com tema escuro otimizado para leitura prolongada e estética tech
 
-- GitHub: [jbrunops](https://github.com/jbrunops/)
-- Twitter: [jbrunops](https://x.com/jbrunops)
-- Facebook: [jacksonporciuncula](https://facebook.com/jacksonporciuncula)
-- Instagram: [jbrunops](https://instagram.com/jbrunops)
+### Seções
+- **Portfolio** - Exibição de projetos de desenvolvimento front-end com descrições e links
+- **UX/UI** - Estudos de caso e artigos relacionados a design e experiência do usuário
+- **Música** - Integração com players do Spotify e SoundCloud para mostrar produções musicais
 
-## 📄 Licença
+### UX/UX
+- **Animações Sutis** - Microinterações e animações que melhoram a experiência do usuário
+- **Estados de Loading** - Feedback visual durante o carregamento de dados
+- **Tratamento de Erros** - Mensagens amigáveis quando algo dá errado
+- **Elementos Decorativos** - Efeitos de blur, gradientes animados e partículas que se movem suavemente
 
-Este projeto está sob a licença MIT.
+## 📁 Estrutura do Projeto
+
+O projeto segue uma arquitetura organizada e escalável:
+
+```
+src/
+├── components/         # Componentes reutilizáveis
+│   ├── ui/             # Componentes básicos de UI
+│   └── ...             # Componentes de maior complexidade
+├── hooks/              # Hooks personalizados
+├── lib/                # Utilitários e funções auxiliares
+├── pages/              # Componentes de página
+└── main.tsx            # Ponto de entrada da aplicação
+```
+
+## 🧩 Componentes Reutilizáveis
+
+O projeto foi desenvolvido com um forte foco na reutilização de componentes:
+
+### Layout
+- **Layout.tsx** - Estrutura principal com animações de fundo e decorações
+- **Header.tsx** - Cabeçalho com navegação responsiva e avatar
+- **Footer.tsx** - Rodapé com copyright e links sociais
+
+### UI Components
+- **SectionTitle** - Títulos de seção com ícones e subtítulos
+- **LinkCard** - Cards clicáveis para exibir links e projetos
+- **CaseStudyCard** - Cards para exibir estudos de caso com imagens e descrições
+- **SocialIcons** - Conjunto de ícones sociais com links externos
+- **SerieCard** - Card específico para mostrar séries literárias (implementado mas removido temporariamente)
+
+### UI Primitives (via Shadcn/UI)
+- **Button** - Botões estilizados com variantes
+- **Avatar** - Componente para exibir imagens de perfil
+- **Toaster/Sonner** - Sistema de notificações toast
+- **Tooltip** - Dicas para elementos de UI
+
+## 🪝 Hooks Personalizados
+
+Hooks React personalizados para lógica reutilizável:
+
+- **useMediumArticles** - Hook para buscar e atualizar periodicamente artigos do Medium
+  - Gerencia estados de loading, erro e dados
+  - Suporta refetch automático em intervalos configuráveis
+  - Inclui tratamento de erros integrado
+
+## 🌐 Integrações de API
+
+### Medium API
+- Integração com o feed RSS do Medium via RSS2JSON
+- Extração automática de miniaturas de artigos do conteúdo
+- Cache e atualização periódica dos dados
+
+### Spotify & SoundCloud
+- Integração com players embedados do Spotify
+- Integração com player embedado do SoundCloud
+
+## 🎨 UI/UX & Design
+
+### Design System
+- **Paleta de Cores** - Tons escuros com acentos em azul e roxo
+- **Tipografia** - Fontes sem serifa para melhor legibilidade
+- **Espaçamento** - Sistema consistente de margens e paddings
+- **Cards** - Elementos de vidro (glass-effect) com bordas sutis
+- **Ícones** - Ícones consistentes que correspondem ao contexto
+
+### Animações
+- **Page Transitions** - Animações suaves entre páginas
+- **Hover Effects** - Feedback visual ao passar o mouse sobre elementos
+- **Background Elements** - Elementos decorativos animados no fundo
+- **Loading States** - Animações durante estados de carregamento
+
+## 📱 Responsive Design
+
+O projeto segue uma abordagem mobile-first com adaptações para diversos tamanhos de tela:
+
+- **Mobile (< 640px)** - Layout em coluna única com conteúdo centralizado
+- **Tablet (>= 640px)** - Layout com mais espaço de respiro e alguns elementos lado a lado
+- **Desktop (>= 1024px)** - Layout completo com elementos decorativos adicionais e organização otimizada
+
+Estratégias de responsividade:
+- Uso de unidades flexíveis (`rem`, porcentagens)
+- Grid e Flexbox para layouts adaptativos
+- Media queries para ajustes específicos
+- Alinhamento diferenciado em mobile (centralizado) vs desktop (à esquerda)
+
+## ⚡ Performance
+
+O projeto é otimizado para carregar rapidamente e funcionar suavemente:
+
+- **Code Splitting** - Carregamento de código sob demanda
+- **Lazy Loading** - Imagens e componentes carregados quando necessário
+- **Efficient Bundling** - Bundle otimizado com Vite
+- **Caching** - Estratégias de cache para dados externos
+- **Optimized Animations** - Animações otimizadas usando Framer Motion
+
+## 🚀 Como Executar
+
+Para rodar o projeto localmente:
+
+```bash
+# Clonar o repositório
+git clone https://github.com/seu-usuario/jacksonporciuncula-portfolio.git
+cd jacksonporciuncula-portfolio
+
+# Instalar dependências
+npm install
+
+# Iniciar servidor de desenvolvimento
+npm run dev
+
+# Para build de produção
+npm run build
+```
+
+## 🔧 Manutenção e Atualização
+
+### Adicionar Novos Projetos
+
+Para adicionar novos projetos à seção Portfolio, edite o arquivo `src/pages/Portfolio.tsx`:
+
+```tsx
+const devProjects = [
+  {
+    title: "Novo Projeto",
+    description: "Descrição do novo projeto",
+    url: "https://url-do-projeto.com",
+    icon: <ExternalLink size={20} />
+  },
+  // Projetos existentes...
+];
+```
+
+### Atualizar Informações Pessoais
+
+Para atualizar informações de perfil, edite o componente Header em `src/components/Header.tsx`.
+
+### Adicionar Nova Seção
+
+1. Crie um novo componente em `src/pages/`
+2. Adicione a rota em `src/App.tsx`
+3. Adicione o link de navegação em `src/components/Header.tsx`
 
 ---
 
