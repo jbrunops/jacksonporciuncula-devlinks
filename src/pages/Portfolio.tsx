@@ -1,24 +1,10 @@
 import React from 'react';
-import { Code, ExternalLink } from 'lucide-react';
+import { Code } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
 import LinkCard from '@/components/LinkCard';
+import { devProjects } from '@/data/projects';
 
 const Portfolio = () => {
-  const devProjects = [
-    {
-      title: "Casa dos Escritores",
-      description: "Plataforma para escritores compartilharem e desenvolverem seus trabalhos",
-      url: "https://www.casadosescritores.com.br",
-      icon: <ExternalLink size={20} />
-    },
-    {
-      title: "Quero Ser Católico",
-      description: "Site educacional sobre catolicismo e formação religiosa",
-      url: "https://www.querosercatolico.com.br",
-      icon: <ExternalLink size={20} />
-    }
-  ];
-
   return (
     <>
       <SectionTitle 
