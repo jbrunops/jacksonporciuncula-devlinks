@@ -147,10 +147,7 @@
     }
   }
 
-  .spotify-container iframe, .soundcloud-container iframe {
-    @apply w-full rounded-xl shadow-md border border-tech-blue/10;
-    max-height: 152px;
-  }
+
   
   .animated-gradient {
     background: linear-gradient(-45deg, #3a86ff, #8860d0, #121212, #2d2d2d);

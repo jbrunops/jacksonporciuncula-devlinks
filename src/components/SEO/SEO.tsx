@@ -12,8 +12,8 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = 'Jackson Porciúncula - Desenvolvedor • UX/UI Designer • Músico',
-  description = 'Portfolio de Jackson Porciúncula: Desenvolvedor Front-end, UX/UI Designer e músico. Conheça meus projetos, designs e músicas.',
+  title = 'Jackson Porciúncula - Desenvolvedor • UX/UI Designer',
+  description = 'Portfolio de Jackson Porciúncula: Desenvolvedor Front-end e UX/UI Designer. Conheça meus projetos e designs.',
   image = '/opengraph.png',
   url = 'https://jacksonporciuncula.com',
   isArticle = false,

@@ -62,7 +62,7 @@ O projeto utiliza diversas tecnologias modernas de desenvolvimento front-end:
 ### Seções
 - **Portfolio** - Exibição de projetos de desenvolvimento front-end com descrições e links
 - **UX/UI** - Estudos de caso e artigos relacionados a design e experiência do usuário
-- **Música** - Integração com players do Spotify e SoundCloud para mostrar produções musicais
+
 
 ### UX/UX
 - **Animações Sutis** - Microinterações e animações que melhoram a experiência do usuário
@@ -128,9 +128,7 @@ Hooks React personalizados para lógica reutilizável:
 - Extração automática de miniaturas de artigos do conteúdo
 - Cache e atualização periódica dos dados
 
-### Spotify & SoundCloud
-- Integração com players embedados do Spotify
-- Integração com player embedado do SoundCloud
+
 - Carregamento condicional para melhorar privacidade e desempenho
 
 ## 🎨 UI/UX & Design
@@ -173,7 +171,7 @@ O projeto implementa diversas práticas para melhorar a visibilidade nos motores
 - **Sitemap XML** - Mapa do site para indexação por rastreadores
 - **Robots.txt** - Configuração para controle de rastreamento
 - **Imagem OpenGraph** - Imagem personalizada para compartilhamento social
-- **Carregamento condicional** - Players de música carregados apenas quando solicitados
+
 
 ## 📱 Responsive Design
 

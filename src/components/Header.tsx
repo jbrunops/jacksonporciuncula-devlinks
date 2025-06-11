@@ -28,13 +28,12 @@ const Header = () => {
           Jackson Porciúncula
         </h1>
         <p className="text-gray-400 mt-2 max-w-md mx-auto">
-          Desenvolvedor Front-end • UX/UI Designer • Músico
+          Desenvolvedor Front-end • UX/UI Designer
         </p>
       </div>
       <nav className="flex flex-wrap gap-3 mb-6 justify-center">
         <NavLink to="/" active={path === "/"}>Portfolio</NavLink>
         <NavLink to="/ux-ui" active={path === "/ux-ui"}>UX/UI</NavLink>
-        <NavLink to="/musica" active={path === "/musica"}>Música</NavLink>
       </nav>
       
       <SocialIcons className="mt-1" />

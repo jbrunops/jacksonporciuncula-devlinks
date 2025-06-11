@@ -7,7 +7,6 @@ import { AnimatePresence } from "framer-motion";
 import Layout from "./components/Layout";
 import Portfolio from "./pages/Portfolio";
 import UxUi from "./pages/UxUi";
-import Musica from "./pages/Musica";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,7 +19,6 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout><Portfolio /></Layout>} />
         <Route path="/ux-ui" element={<Layout><UxUi /></Layout>} />
-        <Route path="/musica" element={<Layout><Musica /></Layout>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>

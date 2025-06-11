@@ -47,7 +47,7 @@ const SchemaOrg: React.FC<SchemaOrgProps> = ({
       'https://instagram.com/jbrunops',
       'https://facebook.com/jacksonporciuncula',
     ],
-    description: 'Desenvolvedor Front-end especializado em React, TypeScript e interfaces modernas, UX/UI Designer e músico.',
+    description: 'Desenvolvedor Front-end especializado em React, TypeScript e interfaces modernas, e UX/UI Designer.',
     image,
   };
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '@/components/Header';
 import DevSection from '@/components/DevSection';
-import SpotifySection from '@/components/SpotifySection';
 import WritingSection from '@/components/WritingSection';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO/SEO';
@@ -11,8 +10,8 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col bg-tech-dark text-tech-light relative overflow-hidden">
       <SEO 
-        title="Jackson Porciúncula - Desenvolvedor • UX/UI Designer • Músico" 
-        description="Portfolio de Jackson Porciúncula: Desenvolvedor Front-end, UX/UI Designer e músico. Conheça meus projetos, designs e músicas."
+        title="Jackson Porciúncula - Desenvolvedor • UX/UI Designer" 
+        description="Portfolio de Jackson Porciúncula: Desenvolvedor Front-end e UX/UI Designer. Conheça meus projetos e designs."
         url="/"
       />
       
@@ -40,7 +39,6 @@ const Index = () => {
         <div className="glass-effect p-4 sm:p-6 md:p-8 mb-8 rounded-xl">
           <DevSection />
           <WritingSection />
-          <SpotifySection />
         </div>
         
         <Footer />
