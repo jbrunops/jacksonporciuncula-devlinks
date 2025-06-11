@@ -50,16 +50,5 @@ export const portfolioProjects: Project[] = [
     createdAt: new Date('2023-06-10'),
     updatedAt: new Date('2024-11-15'),
   },
-  {
-    id: 'portfolio-pessoal',
-    title: "Portfolio Pessoal",
-    description: "Portfolio responsivo desenvolvido com React, TypeScript e animações fluidas",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
-    githubUrl: "https://github.com/jbrunops/portfolio",
-    featured: true,
-    category: 'frontend',
-    status: 'completed',
-    createdAt: new Date('2024-01-15'),
-    updatedAt: new Date('2024-12-20'),
-  },
+
 ]; 
