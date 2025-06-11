@@ -57,7 +57,7 @@ const Header = () => {
       </div>
       
       <nav 
-        className="flex flex-wrap gap-3 mb-6 justify-center"
+        className="flex flex-wrap gap-2 mb-6 justify-center items-center"
         role="navigation"
         aria-label="Navegação principal"
       >
@@ -90,7 +90,7 @@ const NavLink = ({ to, active, children, 'aria-current': ariaCurrent }: NavLinkP
     <Link
       to={to}
       className={cn(
-        "px-4 py-2 rounded-full text-sm transition-all duration-300 font-medium focus:outline-none focus:ring-2 focus:ring-tech-blue focus:ring-offset-2 focus:ring-offset-tech-dark",
+        "px-6 py-2.5 rounded-full text-sm transition-all duration-300 font-medium focus:outline-none focus:ring-2 focus:ring-tech-blue focus:ring-offset-2 focus:ring-offset-tech-dark min-w-[90px] text-center inline-flex items-center justify-center",
         active 
           ? "bg-gradient-to-r from-tech-blue to-tech-purple text-white shadow-md shadow-tech-blue/20 scale-105"
           : "bg-tech-gray/30 text-gray-300 hover:bg-tech-gray/50 hover:text-white hover:shadow-sm hover:shadow-tech-purple/20 hover:scale-105 border border-transparent hover:border-tech-purple/30"
