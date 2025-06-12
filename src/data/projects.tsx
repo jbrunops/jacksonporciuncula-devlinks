@@ -50,5 +50,19 @@ export const portfolioProjects: Project[] = [
     createdAt: new Date('2023-06-10'),
     updatedAt: new Date('2024-11-15'),
   },
+];
 
+export const softwareProjects: Project[] = [
+  {
+    id: 'limpa-metadados',
+    title: "Limpa Metadados",
+    description: "Removedor de metadados de arquivos de vídeo para proteger privacidade e remover informações pessoais como localização GPS, modelo do dispositivo e outros dados sensíveis",
+    technologies: ["Python", "FFmpeg", "Tkinter", "GUI"],
+    githubUrl: "https://github.com/jbrunops/limpa-metadados",
+    featured: true,
+    category: 'frontend',
+    status: 'completed',
+    createdAt: new Date('2024-06-11'),
+    updatedAt: new Date('2024-06-11'),
+  },
 ]; 

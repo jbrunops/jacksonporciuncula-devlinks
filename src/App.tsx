@@ -12,6 +12,7 @@ import LoadingSpinner from "@/components/LoadingSpinner";
 // Lazy loading dos componentes de página
 const Portfolio = lazy(() => import("./pages/Portfolio"));
 const UxUi = lazy(() => import("./pages/UxUi"));
+const Softwares = lazy(() => import("./pages/Softwares"));
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -44,6 +45,16 @@ const AnimatedRoutes = () => {
             <Layout>
               <Suspense fallback={<LoadingSpinner />}>
                 <UxUi />
+              </Suspense>
+            </Layout>
+          } 
+        />
+        <Route 
+          path="/softwares" 
+          element={
+            <Layout>
+              <Suspense fallback={<LoadingSpinner />}>
+                <Softwares />
               </Suspense>
             </Layout>
           } 

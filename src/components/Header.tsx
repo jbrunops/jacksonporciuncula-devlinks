@@ -12,6 +12,7 @@ const Header = () => {
   const navItems: NavItem[] = [
     { label: 'Portfolio', href: '/', isActive: path === '/' },
     { label: 'UX/UI', href: '/ux-ui', isActive: path === '/ux-ui' },
+    { label: 'Softwares', href: '/softwares', isActive: path === '/softwares' },
   ];
 
   return (
